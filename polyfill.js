@@ -15,6 +15,9 @@ I'll make this work properly as a polyfill, but later
 		mapper = [].map
 	const TypedArray = Reflect.getPrototypeOf(Int8Array)
 
+	/**
+	https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toindex
+	*/
 	const toIndex = x => {
 		x = trunc(x) || 0
 		if (x >= 0 && x <= MAX) return x
