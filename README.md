@@ -1,3 +1,3 @@
 # BooleanArray
 
-Stage -1
+Stage -1 (pre-0)
